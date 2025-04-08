@@ -1,0 +1,25 @@
+Here's what it does:
+
+students: This is the original list of dictionaries, 
+where each dictionary contains information about a student,
+ including their name, grade, and attendance.
+
+sorted() function: This built-in Python function returns a 
+new sorted list from the elements of any iterable
+ (in this case, the students list). 
+It does not modify the original list.
+
+key=lambda x: x["Grade"]: This part specifies the sorting criteria. 
+Let's break it down further:
+
+lambda x: x["Grade"]: This is a lambda function (an anonymous function) that takes one argument x and returns x["Grade"]. In this context, x represents each dictionary in the students list. So, the lambda function extracts the "Grade" value from each dictionary.
+
+key=: The key parameter of the sorted() function tells it to 
+use the provided lambda function to extract the value for 
+comparison during sorting.
+
+In summary, the sorted() function uses the lambda function to extract 
+the "Grade" value from each dictionary in the students list and sorts 
+the dictionaries based on these values. The result is a new list,
+ sorted_students, where the student dictionaries are ordered by 
+their grades in ascending order.
